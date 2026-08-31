@@ -1,4 +1,47 @@
-const img = (seed) => `https://picsum.photos/seed/${seed}/600/600`;
+const img = (type) => {
+  const images = {
+    airx: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop",
+    chrono:
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&h=600&fit=crop",
+    sonic:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=600&fit=crop",
+    aerocap:
+      "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=600&h=600&fit=crop",
+    voyager:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
+    pulse:
+      "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=600&h=600&fit=crop",
+    urban:
+      "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&h=600&fit=crop",
+    velocity:
+      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&h=600&fit=crop",
+    lumina:
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop",
+    bassmax:
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&h=600&fit=crop",
+    nomad:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
+    glide:
+      "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=600&h=600&fit=crop",
+
+    "cat-sneakers":
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop",
+    "cat-watches":
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&h=600&fit=crop",
+    "cat-headphones":
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=600&fit=crop",
+    "cat-bags":
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
+    "cat-accessories":
+      "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=600&h=600&fit=crop",
+    "cat-electronics":
+      "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=600&h=600&fit=crop",
+    "cat-fashion":
+      "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&h=600&fit=crop",
+  };
+
+  return images[type];
+};
 
 export const products = [
   {
@@ -20,8 +63,14 @@ export const products = [
     featured: true,
     bestseller: true,
     newArrival: false,
-    specs: { Weight: "240g", Material: "Knit / Rubber", Drop: "8mm", Warranty: "1 Year" },
+    specs: {
+      Weight: "240g",
+      Material: "Knit / Rubber",
+      Drop: "8mm",
+      Warranty: "1 Year",
+    },
   },
+
   {
     id: 2,
     name: "Chrono Elite",
@@ -41,8 +90,14 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: false,
-    specs: { Movement: "Automatic", Case: "42mm Steel", Water: "50m", Glass: "Sapphire" },
+    specs: {
+      Movement: "Automatic",
+      Case: "42mm Steel",
+      Water: "50m",
+      Glass: "Sapphire",
+    },
   },
+
   {
     id: 3,
     name: "Sonic Pro",
@@ -62,8 +117,14 @@ export const products = [
     featured: true,
     bestseller: false,
     newArrival: false,
-    specs: { Battery: "40h", Bluetooth: "5.3", ANC: "Yes", Drivers: "40mm" },
+    specs: {
+      Battery: "40h",
+      Bluetooth: "5.3",
+      ANC: "Yes",
+      Drivers: "40mm",
+    },
   },
+
   {
     id: 4,
     name: "Aero Cap",
@@ -82,8 +143,13 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: true,
-    specs: { Material: "Cotton Twill", Closure: "Snapback", Fit: "Unisex" },
+    specs: {
+      Material: "Cotton Twill",
+      Closure: "Snapback",
+      Fit: "Unisex",
+    },
   },
+
   {
     id: 5,
     name: "Voyager Tote",
@@ -102,8 +168,13 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: false,
-    specs: { Material: "Full-grain Leather", Laptop: '15"', Weight: "720g" },
+    specs: {
+      Material: "Full-grain Leather",
+      Laptop: '15"',
+      Weight: "720g",
+    },
   },
+
   {
     id: 6,
     name: "Pulse Buds",
@@ -123,8 +194,14 @@ export const products = [
     featured: true,
     bestseller: false,
     newArrival: false,
-    specs: { Battery: "28h", Bluetooth: "5.3", ANC: "Hybrid", Rating: "IPX5" },
+    specs: {
+      Battery: "28h",
+      Bluetooth: "5.3",
+      ANC: "Hybrid",
+      Rating: "IPX5",
+    },
   },
+
   {
     id: 7,
     name: "Urban Jacket",
@@ -143,8 +220,13 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: false,
-    specs: { Material: "Recycled Nylon", Water: "Repellent", Weight: "380g" },
+    specs: {
+      Material: "Recycled Nylon",
+      Water: "Repellent",
+      Weight: "380g",
+    },
   },
+
   {
     id: 8,
     name: "Velocity Sneaker",
@@ -163,8 +245,14 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: true,
-    specs: { Weight: "220g", Plate: "Carbon", Drop: "6mm", Warranty: "1 Year" },
+    specs: {
+      Weight: "220g",
+      Plate: "Carbon",
+      Drop: "6mm",
+      Warranty: "1 Year",
+    },
   },
+
   {
     id: 9,
     name: "Lumina Watch",
@@ -183,8 +271,14 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: true,
-    specs: { Display: "AMOLED", Battery: "7d", Sensors: "HR + SpO2", Water: "50m" },
+    specs: {
+      Display: "AMOLED",
+      Battery: "7d",
+      Sensors: "HR + SpO2",
+      Water: "50m",
+    },
   },
+
   {
     id: 10,
     name: "Bass Max",
@@ -203,8 +297,14 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: false,
-    specs: { Battery: "32h", Bluetooth: "5.2", Bass: "Boosted", Drivers: "45mm" },
+    specs: {
+      Battery: "32h",
+      Bluetooth: "5.2",
+      Bass: "Boosted",
+      Drivers: "45mm",
+    },
   },
+
   {
     id: 11,
     name: "Nomad Backpack",
@@ -223,8 +323,14 @@ export const products = [
     featured: true,
     bestseller: true,
     newArrival: false,
-    specs: { Volume: "24L", Laptop: '16"', Material: "X-Pac", Weight: "640g" },
+    specs: {
+      Volume: "24L",
+      Laptop: '16"',
+      Material: "X-Pac",
+      Weight: "640g",
+    },
   },
+
   {
     id: 12,
     name: "Glide Slides",
@@ -243,18 +349,50 @@ export const products = [
     featured: false,
     bestseller: false,
     newArrival: true,
-    specs: { Material: "EVA", Footbed: "Contoured", Weight: "180g" },
+    specs: {
+      Material: "EVA",
+      Footbed: "Contoured",
+      Weight: "180g",
+    },
   },
 ];
 
 export const categories = [
-  { name: "Sneakers", count: 36, image: img("cat-sneakers") },
-  { name: "Watches", count: 21, image: img("cat-watches") },
-  { name: "Headphones", count: 18, image: img("cat-headphones") },
-  { name: "Bags", count: 24, image: img("cat-bags") },
-  { name: "Accessories", count: 15, image: img("cat-accessories") },
-  { name: "Electronics", count: 29, image: img("cat-electronics") },
-  { name: "Fashion", count: 32, image: img("cat-fashion") },
+  {
+    name: "Sneakers",
+    count: 36,
+    image: img("cat-sneakers"),
+  },
+  {
+    name: "Watches",
+    count: 21,
+    image: img("cat-watches"),
+  },
+  {
+    name: "Headphones",
+    count: 18,
+    image: img("cat-headphones"),
+  },
+  {
+    name: "Bags",
+    count: 24,
+    image: img("cat-bags"),
+  },
+  {
+    name: "Accessories",
+    count: 15,
+    image: img("cat-accessories"),
+  },
+  {
+    name: "Electronics",
+    count: 29,
+    image: img("cat-electronics"),
+  },
+  {
+    name: "Fashion",
+    count: 32,
+    image: img("cat-fashion"),
+  },
 ];
 
 export const featuredProduct = products[0];
