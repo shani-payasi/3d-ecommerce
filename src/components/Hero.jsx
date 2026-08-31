@@ -1,5 +1,4 @@
-git add src/components/Hero.jsx
-git commit -m "Add interactive hero section"import { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import Product3DViewer from "./Product3DViewer";
